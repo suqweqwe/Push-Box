@@ -1,27 +1,146 @@
-﻿<Page x:Class="SokobanGame.StartMenuPage"
+﻿    <Page x:Class="SokobanGame.StartMenuPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="StartMenuPage">
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="StartMenuPage"
+      Loaded="Page_Loaded">
 
-    <Grid Background="LightSkyBlue">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+    <!-- 主容器 - 黑色背景 -->
+    <Grid Background="Black">
+        <!-- 流星雨画布 -->
+        <Canvas x:Name="MeteorCanvas"/>
 
-        <TextBlock Grid.Row="1" Grid.Column="1" Text="推箱子" FontSize="48" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="DarkBlue"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="开始游戏" FontSize="20" Margin="10" Click="StartGame_Click"/>
-        <Button Grid.Row="3" Grid.Column="1" Content="退出" FontSize="20" Margin="10" Click="Exit_Click"/>
+        <!-- 标题和按钮容器 -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- 游戏标题（用DropShadowEffect替代TextShadow属性） -->
+            <TextBlock Grid.Row="1" Grid.Column="1" 
+                       Text="推箱子" 
+                       FontSize="72" 
+                       FontFamily="微软雅黑 Bold"
+                       HorizontalAlignment="Center" 
+                       Margin="0,0,0,60" 
+                       Foreground="White">
+                <TextBlock.Effect>
+                    <!-- 替代TextShadow的阴影效果 -->
+                    <DropShadowEffect 
+                        Color="Cyan" 
+                        BlurRadius="10" 
+                        ShadowDepth="2"/>
+                </TextBlock.Effect>
+                <!-- 标题动画 -->
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation 
+                                    Storyboard.TargetProperty="Opacity"
+                                    From="0" To="1" Duration="0:0:2"/>
+                                <DoubleAnimation 
+                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                    From="0.5" To="1" Duration="0:0:1.5" AccelerationRatio="0.3"/>
+                                <DoubleAnimation 
+                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                    From="0.5" To="1" Duration="0:0:1.5" AccelerationRatio="0.3"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+                <TextBlock.RenderTransform>
+                    <ScaleTransform CenterX="150" CenterY="36"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+
+            <!-- 开始游戏按钮（用Border包装实现圆角，替代Button的CornerRadius） -->
+            <Border Grid.Row="2" Grid.Column="1" 
+                    Margin="10" 
+                    CornerRadius="10"
+                    Background="#333333"
+                    BorderBrush="Cyan"
+                    BorderThickness="2">
+                <Button Content="开始游戏" 
+                        FontSize="28" 
+                        Height="70"
+                        Click="StartGame_Click"
+                        Foreground="White"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        BorderThickness="0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="LightCyan"/>
+                                    <Setter Property="RenderTransform">
+                                        <Setter.Value>
+                                            <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Border>
+
+            <!-- 退出按钮（同样用Border实现圆角） -->
+            <Border Grid.Row="3" Grid.Column="1" 
+                    Margin="10" 
+                    CornerRadius="10"
+                    Background="#333333"
+                    BorderBrush="Cyan"
+                    BorderThickness="2">
+                <Button Content="退出" 
+                        FontSize="28" 
+                        Height="70"
+                        Click="Exit_Click"
+                        Foreground="White"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        BorderThickness="0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="LightCyan"/>
+                                    <Setter Property="RenderTransform">
+                                        <Setter.Value>
+                                            <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Border>
+        </Grid>
     </Grid>
 </Page>

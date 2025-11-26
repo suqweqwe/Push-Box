@@ -11,7 +11,6 @@ D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\MapSelectPage.g.cs
 D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\StartMenuPage.g.cs
 D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\App.g.cs
 D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\SokobanGame_MarkupCompile.cache
-D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\SokobanGame_MarkupCompile.lref
 D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\MainWindow.baml
 D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\SokobanGame.g.resources
 D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\SokobanGame.Properties.Resources.resources

@@ -3,44 +3,36 @@
   "WorkspaceRootPath": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|d:\\\u684C\u9762\u5168\u7B14\u8BB0\\wpf\\sokobangame\\sokobangame\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\gamepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\gamepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\mapselectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\mapselectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\mapselectpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\mapselectpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\startmenupage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\startmenupage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\startmenupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\startmenupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\gameobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\gameobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\mapselectpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\mapselectpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\startmenupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\startmenupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\mapselectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\mapselectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\sokobangame\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3AB2709A-EDD5-4D0A-A61F-E204A95D09E3}|SokobanGame\\SokobanGame.csproj|solutionrelative:sokobangame\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,38 +50,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GamePage.xaml.cs",
-              "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\GamePage.xaml.cs",
-              "RelativeDocumentMoniker": "SokobanGame\\GamePage.xaml.cs",
-              "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\GamePage.xaml.cs",
-              "RelativeToolTip": "SokobanGame\\GamePage.xaml.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAowCgBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T03:21:48.659Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GamePage.xaml",
-              "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\GamePage.xaml",
-              "RelativeDocumentMoniker": "SokobanGame\\GamePage.xaml",
-              "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\GamePage.xaml",
-              "RelativeToolTip": "SokobanGame\\GamePage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T03:21:29.711Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MapSelectPage.xaml.cs",
               "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\MapSelectPage.xaml.cs",
               "RelativeDocumentMoniker": "SokobanGame\\MapSelectPage.xaml.cs",
               "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\MapSelectPage.xaml.cs",
               "RelativeToolTip": "SokobanGame\\MapSelectPage.xaml.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAuwCYAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAmwDkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T03:20:55.6Z"
+              "WhenOpened": "2025-11-20T03:20:55.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StartMenuPage.xaml",
+              "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\StartMenuPage.xaml",
+              "RelativeDocumentMoniker": "SokobanGame\\StartMenuPage.xaml",
+              "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\StartMenuPage.xaml",
+              "RelativeToolTip": "SokobanGame\\StartMenuPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-20T03:18:53.015Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -100,70 +82,63 @@
               "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\MapSelectPage.xaml",
               "RelativeToolTip": "SokobanGame\\MapSelectPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T03:20:06.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StartMenuPage.xaml.cs",
-              "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\StartMenuPage.xaml.cs",
-              "RelativeDocumentMoniker": "SokobanGame\\StartMenuPage.xaml.cs",
-              "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\StartMenuPage.xaml.cs",
-              "RelativeToolTip": "SokobanGame\\StartMenuPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T03:19:17.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StartMenuPage.xaml",
-              "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\StartMenuPage.xaml",
-              "RelativeDocumentMoniker": "SokobanGame\\StartMenuPage.xaml",
-              "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\StartMenuPage.xaml",
-              "RelativeToolTip": "SokobanGame\\StartMenuPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T03:18:53.015Z"
+              "WhenOpened": "2025-11-20T03:20:06.234Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MapManager.cs",
-              "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\MapManager.cs",
-              "RelativeDocumentMoniker": "SokobanGame\\MapManager.cs",
-              "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\MapManager.cs",
-              "RelativeToolTip": "SokobanGame\\MapManager.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAQwAwAAAARAAAAAAAAAA==",
+              "Title": "GamePage.xaml.cs",
+              "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\GamePage.xaml.cs",
+              "RelativeDocumentMoniker": "SokobanGame\\GamePage.xaml.cs",
+              "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\GamePage.xaml.cs",
+              "RelativeToolTip": "SokobanGame\\GamePage.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T03:18:23.949Z",
+              "WhenOpened": "2025-11-20T03:21:48.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "GameObjects.cs",
-              "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\GameObjects.cs",
-              "RelativeDocumentMoniker": "SokobanGame\\GameObjects.cs",
-              "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\GameObjects.cs",
-              "RelativeToolTip": "SokobanGame\\GameObjects.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAA2wCsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T03:17:45.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SokobanGame\\MainWindow.xaml",
               "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\MainWindow.xaml",
               "RelativeToolTip": "SokobanGame\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T03:15:52.638Z"
+              "WhenOpened": "2025-11-20T03:15:52.638Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
+              "Title": "StartMenuPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\StartMenuPage.xaml.cs",
+              "RelativeDocumentMoniker": "SokobanGame\\StartMenuPage.xaml.cs",
+              "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\StartMenuPage.xaml.cs",
+              "RelativeToolTip": "SokobanGame\\StartMenuPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T03:19:17.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameObjects.cs",
+              "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\GameObjects.cs",
+              "RelativeDocumentMoniker": "SokobanGame\\GameObjects.cs",
+              "ToolTip": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\GameObjects.cs",
+              "RelativeToolTip": "SokobanGame\\GameObjects.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA1wCsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T03:17:45.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\\u684C\u9762\u5168\u7B14\u8BB0\\WPF\\SokobanGame\\SokobanGame\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "SokobanGame\\MainWindow.xaml.cs",
@@ -171,7 +146,8 @@
               "RelativeToolTip": "SokobanGame\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T03:15:51.779Z"
+              "WhenOpened": "2025-11-20T03:15:51.779Z",
+              "EditorCaption": ""
             }
           ]
         }

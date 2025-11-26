@@ -4,27 +4,122 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="MapSelectPage">
+      Title="MapSelectPage"
+      Loaded="Page_Loaded"
+      Margin="0" 
+    Background="#0f172a">
+    <!-- 深色背景，无白色 -->
 
-    <Grid Background="LightSalmon">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+    <Page.Resources>
+        <QuadraticEase x:Key="QuadraticEaseOut" EasingMode="EaseOut"/>
+    </Page.Resources>
 
-        <TextBlock Grid.Row="1" Grid.Column="1" Text="选择地图" FontSize="48" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="DarkRed"/>
+    <!-- 全屏容器，无留白 -->
+    <Grid>
+        <!-- 全屏星空背景（覆盖整个窗口） -->
+        <Canvas x:Name="StarsCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
-        <!-- 地图按钮将动态生成 -->
-        <StackPanel Grid.Row="2" Grid.Column="1" x:Name="MapButtonsPanel" Orientation="Vertical" HorizontalAlignment="Center"/>
+        <!-- 内容容器，居中显示 -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <!-- 标题行 -->
+                <RowDefinition Height="Auto"/>
+                <!-- 按钮列表行 -->
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="600"/>
+                <!-- 中间内容宽度 -->
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-        <Button Grid.Row="3" Grid.Column="1" Content="返回" FontSize="20" Margin="10" Click="Back_Click"/>
+            <!-- 标题 -->
+            <TextBlock Grid.Row="1" Grid.Column="1" 
+                       Text="选择地图" 
+                       FontSize="64" 
+                       FontFamily="微软雅黑 Bold"
+                       HorizontalAlignment="Center" 
+                       Margin="0,0,0,60" 
+                       Foreground="#e2e8f0">  
+                <TextBlock.Effect>
+                    <DropShadowEffect 
+                        Color="#38bdf8" 
+                        BlurRadius="15" 
+                        ShadowDepth="4"/>
+                </TextBlock.Effect>
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation 
+                                    Storyboard.TargetProperty="Opacity"
+                                    From="0" To="1" Duration="0:0:1.5"/>
+                                <DoubleAnimation 
+                                    Storyboard.TargetProperty="RenderTransform.Y"
+                                    From="-30" To="0" Duration="0:0:1.5" 
+                                    EasingFunction="{StaticResource QuadraticEaseOut}"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+                <TextBlock.RenderTransform>
+                    <TranslateTransform Y="0"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+
+            <!-- 地图按钮容器 -->
+            <StackPanel Grid.Row="2" Grid.Column="1" 
+                        x:Name="MapButtonsPanel" 
+                        Orientation="Vertical" 
+                        HorizontalAlignment="Center"
+                        Margin="20">
+                <!-- 按钮将动态生成 -->
+            </StackPanel>
+
+            <!-- 返回按钮 -->
+            <Border Grid.Row="3" Grid.Column="1" 
+                    Margin="10,40,10,60"  
+                CornerRadius="10"
+                    Background="#1e293b"
+             
+                BorderBrush="#38bdf8"
+           
+                BorderThickness="2"
+                    Width="180">
+                <Button Content="返回" 
+                        FontSize="24" 
+                        Height="65"
+                        Click="Back_Click"
+                        Foreground="#e2e8f0" 
+                    Background="Transparent"
+                        BorderBrush="Transparent"
+                        BorderThickness="0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#38bdf8"/>
+                                    <!-- 悬停变亮蓝色 -->
+                                    <Setter Property="RenderTransform">
+                                        <Setter.Value>
+                                            <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Border>
+        </Grid>
     </Grid>
 </Page>

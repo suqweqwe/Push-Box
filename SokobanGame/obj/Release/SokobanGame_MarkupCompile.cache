@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\
+D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Release\
 SokobanGame
 none
 false
-DEBUG;TRACE
+TRACE
 D:\桌面全笔记\WPF\SokobanGame\SokobanGame\App.xaml
 4891847031
 
-11616398746
+10-1596479932
 13-1310406943
 GamePage.xaml;MainWindow.xaml;MapSelectPage.xaml;StartMenuPage.xaml;
 
