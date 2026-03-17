@@ -74,22 +74,48 @@ namespace SokobanGame
 
                 var border = new Border
                 {
-                    Margin = new Thickness(0, 0, 0, 20), // 按钮间距
-                    CornerRadius = new CornerRadius(10),
-                    Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#1e293b")), // 深蓝灰按钮背景
-                    BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#38bdf8")), // 亮蓝边框
-                    BorderThickness = new Thickness(2),
-                    Width = 500,
+                    Margin = new Thickness(0, 0, 0, 25), // 按钮间距
+                    CornerRadius = new CornerRadius(15),
+                    Width = 550,
+                    Height = 90,
                     Opacity = 0,
-                    RenderTransform = new TranslateTransform { X = 30, Y = 0 }
+                    RenderTransform = new TranslateTransform { X = 50, Y = 0 },
+                    Cursor = System.Windows.Input.Cursors.Hand
+                };
+
+                // 渐变背景
+                var backgroundBrush = new LinearGradientBrush();
+                backgroundBrush.StartPoint = new Point(0, 0);
+                backgroundBrush.EndPoint = new Point(0, 1);
+                backgroundBrush.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#1e3a5f"), 0));
+                backgroundBrush.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#2a4a6f"), 1));
+                border.Background = backgroundBrush;
+
+                // 渐变边框
+                var borderBrush = new LinearGradientBrush();
+                borderBrush.StartPoint = new Point(0, 0);
+                borderBrush.EndPoint = new Point(1, 1);
+                borderBrush.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#00D9FF"), 0));
+                borderBrush.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#0099CC"), 1));
+                border.BorderBrush = borderBrush;
+                border.BorderThickness = new Thickness(2);
+
+                // 阴影效果
+                border.Effect = new System.Windows.Media.Effects.DropShadowEffect
+                {
+                    Color = (Color)ColorConverter.ConvertFromString("#00D9FF"),
+                    BlurRadius = 20,
+                    Opacity = 0.5,
+                    ShadowDepth = 0
                 };
 
                 var button = new Button
                 {
                     Content = mapName,
-                    FontSize = 28,
-                    Height = 80, // 按钮高度
-                    Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#e2e8f0")), // 浅灰文字
+                    FontSize = 30,
+                    FontWeight = FontWeights.Bold,
+                    Height = 90,
+                    Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFFF")), // 白色文字
                     Background = Brushes.Transparent,
                     BorderBrush = Brushes.Transparent,
                     BorderThickness = new Thickness(0)
@@ -107,12 +133,25 @@ namespace SokobanGame
                     Property = UIElement.IsMouseOverProperty,
                     Value = true
                 };
-                mouseOverTrigger.Setters.Add(new Setter(ForegroundProperty, new SolidColorBrush((Color)ColorConverter.ConvertFromString("#38bdf8")))); // 悬停文字变亮蓝
-                mouseOverTrigger.Setters.Add(new Setter(RenderTransformProperty, new ScaleTransform(1.05, 1.05)));
+                mouseOverTrigger.Setters.Add(new Setter(ForegroundProperty, new SolidColorBrush((Color)ColorConverter.ConvertFromString("#00D9FF")))); // 悬停文字变亮蓝
+                mouseOverTrigger.Setters.Add(new Setter(RenderTransformProperty, new ScaleTransform(1.08, 1.08)));
                 buttonStyle.Triggers.Add(mouseOverTrigger);
                 buttonStyle.Setters.Add(new Setter(RenderTransformOriginProperty, new Point(0.5, 0.5)));
                 buttonStyle.Setters.Add(new Setter(RenderTransformProperty, new ScaleTransform(1, 1)));
                 button.Style = buttonStyle;
+
+                // Border悬停效果
+                Style borderStyle = new Style(typeof(Border));
+                Trigger borderMouseOverTrigger = new Trigger
+                {
+                    Property = UIElement.IsMouseOverProperty,
+                    Value = true
+                };
+                borderMouseOverTrigger.Setters.Add(new Setter(RenderTransformProperty, new ScaleTransform(1.05, 1.05)));
+                borderStyle.Triggers.Add(borderMouseOverTrigger);
+                borderStyle.Setters.Add(new Setter(RenderTransformOriginProperty, new Point(0.5, 0.5)));
+                borderStyle.Setters.Add(new Setter(RenderTransformProperty, new ScaleTransform(1, 1)));
+                border.Style = borderStyle;
 
                 border.Child = button;
                 MapButtonsPanel.Children.Add(border);

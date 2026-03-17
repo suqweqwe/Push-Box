@@ -1,0 +1,250 @@
+<Page x:Class="SokobanGame.HelpPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="HelpPage"
+      Loaded="Page_Loaded">
+
+    <!-- 主容器 - 渐变背景 -->
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#0a0e27" Offset="0"/>
+                <GradientStop Color="#1a1f3a" Offset="0.5"/>
+                <GradientStop Color="#0a0e27" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!-- 内容容器 -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <Grid Margin="40">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="800"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- 标题 -->
+                <TextBlock Grid.Row="0" Grid.Column="1" 
+                           Text="游戏说明" 
+                           FontSize="64" 
+                           FontFamily="微软雅黑 Bold"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center" 
+                           Margin="0,0,0,40" 
+                           Foreground="#00D9FF">
+                    <TextBlock.Effect>
+                        <DropShadowEffect 
+                            Color="#00D9FF" 
+                            BlurRadius="20" 
+                            ShadowDepth="0"
+                            Opacity="0.8"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+
+                <!-- 如何游玩 -->
+                <Border Grid.Row="1" Grid.Column="1" 
+                        Margin="0,0,0,30"
+                        CornerRadius="15"
+                        Background="#1e3a5f"
+                        BorderBrush="#00D9FF"
+                        BorderThickness="2"
+                        Padding="30">
+                    <StackPanel>
+                        <TextBlock Text="如何游玩" 
+                                   FontSize="36" 
+                                   FontWeight="Bold"
+                                   Foreground="#00D9FF"
+                                   Margin="0,0,0,20"/>
+                        <TextBlock Text="• 使用方向键（↑↓←→）或 WASD 键控制角色移动" 
+                                   FontSize="20"
+                                   Foreground="#FFFFFF"
+                                   Margin="0,0,0,10"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• 将所有的箱子推到目标点（绿色圆圈）上即可通关" 
+                                   FontSize="20"
+                                   Foreground="#FFFFFF"
+                                   Margin="0,0,0,10"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• 箱子只能推动，不能拉动" 
+                                   FontSize="20"
+                                   Foreground="#FFFFFF"
+                                   Margin="0,0,0,10"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• 按 R 键可以重置当前关卡" 
+                                   FontSize="20"
+                                   Foreground="#FFFFFF"
+                                   Margin="0,0,0,10"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• 按 Q 键可以撤回上一步操作（进入地图后左侧也有撤回按钮）" 
+                                   FontSize="20"
+                                   Foreground="#4ECDC4"
+                                   Margin="0,0,0,10"
+                                   FontWeight="Bold"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• 游戏界面左侧会显示当前步数统计" 
+                                   FontSize="20"
+                                   Foreground="#FFFFFF"
+                                   Margin="0,0,0,10"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- 技术说明 -->
+                <Border Grid.Row="2" Grid.Column="1" 
+                        Margin="0,0,0,30"
+                        CornerRadius="15"
+                        Background="#1e3a5f"
+                        BorderBrush="#4ECDC4"
+                        BorderThickness="2"
+                        Padding="30">
+                    <StackPanel>
+                        <TextBlock Text="技术说明" 
+                                   FontSize="36" 
+                                   FontWeight="Bold"
+                                   Foreground="#4ECDC4"
+                                   Margin="0,0,0,20"/>
+                        <TextBlock Text="本游戏使用以下技术制作：" 
+                                   FontSize="20"
+                                   Foreground="#FFFFFF"
+                                   Margin="0,0,0,15"
+                                   FontWeight="Bold"/>
+                        <TextBlock Text="• WPF (Windows Presentation Foundation) - 用于构建用户界面" 
+                                   FontSize="18"
+                                   Foreground="#E0E0E0"
+                                   Margin="0,0,0,8"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• C# - 编程语言" 
+                                   FontSize="18"
+                                   Foreground="#E0E0E0"
+                                   Margin="0,0,0,8"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• XAML - 用于定义界面布局和样式" 
+                                   FontSize="18"
+                                   Foreground="#E0E0E0"
+                                   Margin="0,0,0,8"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• WPF 动画系统 - 实现流畅的移动动画和界面效果" 
+                                   FontSize="18"
+                                   Foreground="#E0E0E0"
+                                   Margin="0,0,0,8"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• 渐变画笔和阴影效果 - 营造现代化的视觉效果" 
+                                   FontSize="18"
+                                   Foreground="#E0E0E0"
+                                   Margin="0,0,0,8"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• 状态管理 - 实现撤回功能和步数统计" 
+                                   FontSize="18"
+                                   Foreground="#E0E0E0"
+                                   Margin="0,0,0,8"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="• 资源嵌入 - 人物图片作为资源嵌入到程序集中" 
+                                   FontSize="18"
+                                   Foreground="#E0E0E0"
+                                   Margin="0,0,0,8"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- 提示信息 -->
+                <Border Grid.Row="3" Grid.Column="1" 
+                        Margin="0,0,0,30"
+                        CornerRadius="15"
+                        Background="#2a4a3a"
+                        BorderBrush="#4ECDC4"
+                        BorderThickness="2"
+                        Padding="30">
+                    <StackPanel>
+                        <TextBlock Text="💡 提示" 
+                                   FontSize="32" 
+                                   FontWeight="Bold"
+                                   Foreground="#4ECDC4"
+                                   Margin="0,0,0,15"/>
+                        <TextBlock Text="进入地图后，左侧面板会显示步数统计和撤回按钮。" 
+                                   FontSize="20"
+                                   Foreground="#FFFFFF"
+                                   Margin="0,0,0,10"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="按 Q 键可以快速撤回上一步操作，帮助你更好地完成关卡！" 
+                                   FontSize="20"
+                                   Foreground="#4ECDC4"
+                                   FontWeight="Bold"
+                                   Margin="0,0,0,10"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- 返回按钮 -->
+                <Border Grid.Row="4" Grid.Column="1" 
+                        Margin="0,20,0,0"
+                        CornerRadius="15"
+                        Width="250"
+                        Height="70"
+                        HorizontalAlignment="Center">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#2a1e3a" Offset="0"/>
+                            <GradientStop Color="#3a2a4a" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.BorderBrush>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#9D4EDD" Offset="0"/>
+                            <GradientStop Color="#7B2CBF" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Border.BorderThickness>
+                        <Thickness>2</Thickness>
+                    </Border.BorderThickness>
+                    <Border.Effect>
+                        <DropShadowEffect Color="#9D4EDD" BlurRadius="15" Opacity="0.5" ShadowDepth="0"/>
+                    </Border.Effect>
+                    <Button Content="返回" 
+                            FontSize="28" 
+                            FontWeight="Bold"
+                            Height="70"
+                            Click="Back_Click"
+                            Foreground="#FFFFFF" 
+                            Background="Transparent"
+                            BorderBrush="Transparent"
+                            BorderThickness="0"
+                            Cursor="Hand">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Foreground" Value="#9D4EDD"/>
+                                        <Setter Property="RenderTransform">
+                                            <Setter.Value>
+                                                <ScaleTransform ScaleX="1.08" ScaleY="1.08"/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Trigger>
+                                </Style.Triggers>
+                                <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Border>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

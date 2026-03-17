@@ -19,3 +19,5 @@ D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\SokobanGame.csproj.Core
 D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\SokobanGame.exe
 D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\SokobanGame.pdb
 D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\SokobanGame.exe.config
+D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\HelpPage.baml
+D:\桌面全笔记\WPF\SokobanGame\SokobanGame\obj\Debug\HelpPage.g.cs

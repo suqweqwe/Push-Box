@@ -109,6 +109,15 @@ namespace SokobanGame
             _mainWindow.MainFrame.Navigate(new MapSelectPage(_mainWindow));
         }
 
+        private void Help_Click(object sender, RoutedEventArgs e)
+        {
+            // 停止流星动画
+            _meteorTimer.Stop();
+
+            // 导航到游戏说明页面
+            _mainWindow.MainFrame.Navigate(new HelpPage(_mainWindow));
+        }
+
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             // 关闭应用程序

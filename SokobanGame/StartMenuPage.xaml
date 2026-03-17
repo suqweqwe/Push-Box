@@ -8,8 +8,16 @@
       Title="StartMenuPage"
       Loaded="Page_Loaded">
 
-    <!-- 主容器 - 黑色背景 -->
-    <Grid Background="Black">
+    <!-- 主容器 - 渐变背景 -->
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#0a0e27" Offset="0"/>
+                <GradientStop Color="#1a1f3a" Offset="0.5"/>
+                <GradientStop Color="#0a0e27" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        
         <!-- 流星雨画布 -->
         <Canvas x:Name="MeteorCanvas"/>
 
@@ -20,28 +28,31 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <!-- 游戏标题（用DropShadowEffect替代TextShadow属性） -->
             <TextBlock Grid.Row="1" Grid.Column="1" 
                        Text="推箱子" 
-                       FontSize="72" 
+                       FontSize="88" 
                        FontFamily="微软雅黑 Bold"
+                       FontWeight="Bold"
                        HorizontalAlignment="Center" 
-                       Margin="0,0,0,60" 
-                       Foreground="White">
+                       Margin="0,0,0,80" 
+                       Foreground="#00D9FF">
                 <TextBlock.Effect>
-                    <!-- 替代TextShadow的阴影效果 -->
+                    <!-- 多层阴影效果，营造发光感 -->
                     <DropShadowEffect 
-                        Color="Cyan" 
-                        BlurRadius="10" 
-                        ShadowDepth="2"/>
+                        Color="#00D9FF" 
+                        BlurRadius="20" 
+                        ShadowDepth="0"
+                        Opacity="0.8"/>
                 </TextBlock.Effect>
                 <!-- 标题动画 -->
                 <TextBlock.Triggers>
@@ -68,27 +79,106 @@
 
             <!-- 开始游戏按钮（用Border包装实现圆角，替代Button的CornerRadius） -->
             <Border Grid.Row="2" Grid.Column="1" 
-                    Margin="10" 
-                    CornerRadius="10"
-                    Background="#333333"
-                    BorderBrush="Cyan"
-                    BorderThickness="2">
+                    Margin="20,15" 
+                    CornerRadius="15"
+                    Width="320"
+                    Height="75"
+                    HorizontalAlignment="Center"
+                    >
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#1e3a5f" Offset="0"/>
+                        <GradientStop Color="#2a4a6f" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.BorderBrush>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#00D9FF" Offset="0"/>
+                        <GradientStop Color="#0099CC" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border.BorderThickness>
+                    <Thickness>2</Thickness>
+                </Border.BorderThickness>
+                <Border.Effect>
+                    <DropShadowEffect Color="#00D9FF" BlurRadius="15" Opacity="0.6" ShadowDepth="0"/>
+                </Border.Effect>
                 <Button Content="开始游戏" 
-                        FontSize="28" 
-                        Height="70"
+                        FontSize="32" 
+                        FontWeight="Bold"
+                        Height="75"
                         Click="StartGame_Click"
-                        Foreground="White"
+                        Foreground="#FFFFFF"
                         Background="Transparent"
                         BorderBrush="Transparent"
-                        BorderThickness="0">
+                        BorderThickness="0"
+                        Cursor="Hand">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Foreground" Value="LightCyan"/>
+                                    <Setter Property="Foreground" Value="#00D9FF"/>
                                     <Setter Property="RenderTransform">
                                         <Setter.Value>
-                                            <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                            <ScaleTransform ScaleX="1.08" ScaleY="1.08"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Border>
+
+            <!-- 游戏说明按钮 -->
+            <Border Grid.Row="3" Grid.Column="1" 
+                    Margin="20,15" 
+                    CornerRadius="15"
+                    Width="320"
+                    Height="75"
+                    HorizontalAlignment="Center">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#2a3a1e" Offset="0"/>
+                        <GradientStop Color="#3a4a2a" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.BorderBrush>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#4ECDC4" Offset="0"/>
+                        <GradientStop Color="#44A08D" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border.BorderThickness>
+                    <Thickness>2</Thickness>
+                </Border.BorderThickness>
+                <Border.Effect>
+                    <DropShadowEffect Color="#4ECDC4" BlurRadius="15" Opacity="0.5" ShadowDepth="0"/>
+                </Border.Effect>
+                <Button Content="游戏说明" 
+                        FontSize="32" 
+                        FontWeight="Bold"
+                        Height="75"
+                        Click="Help_Click"
+                        Foreground="#FFFFFF"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#4ECDC4"/>
+                                    <Setter Property="RenderTransform">
+                                        <Setter.Value>
+                                            <ScaleTransform ScaleX="1.08" ScaleY="1.08"/>
                                         </Setter.Value>
                                     </Setter>
                                 </Trigger>
@@ -105,28 +195,48 @@
             </Border>
 
             <!-- 退出按钮（同样用Border实现圆角） -->
-            <Border Grid.Row="3" Grid.Column="1" 
-                    Margin="10" 
-                    CornerRadius="10"
-                    Background="#333333"
-                    BorderBrush="Cyan"
-                    BorderThickness="2">
+            <Border Grid.Row="4" Grid.Column="1" 
+                    Margin="20,15" 
+                    CornerRadius="15"
+                    Width="320"
+                    Height="75"
+                    HorizontalAlignment="Center">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#3a1e1e" Offset="0"/>
+                        <GradientStop Color="#4a2a2a" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.BorderBrush>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF6B6B" Offset="0"/>
+                        <GradientStop Color="#CC5555" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border.BorderThickness>
+                    <Thickness>2</Thickness>
+                </Border.BorderThickness>
+                <Border.Effect>
+                    <DropShadowEffect Color="#FF6B6B" BlurRadius="15" Opacity="0.5" ShadowDepth="0"/>
+                </Border.Effect>
                 <Button Content="退出" 
-                        FontSize="28" 
-                        Height="70"
+                        FontSize="32" 
+                        FontWeight="Bold"
+                        Height="75"
                         Click="Exit_Click"
-                        Foreground="White"
+                        Foreground="#FFFFFF"
                         Background="Transparent"
                         BorderBrush="Transparent"
-                        BorderThickness="0">
+                        BorderThickness="0"
+                        Cursor="Hand">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Foreground" Value="LightCyan"/>
+                                    <Setter Property="Foreground" Value="#FF6B6B"/>
                                     <Setter Property="RenderTransform">
                                         <Setter.Value>
-                                            <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                            <ScaleTransform ScaleX="1.08" ScaleY="1.08"/>
                                         </Setter.Value>
                                     </Setter>
                                 </Trigger>

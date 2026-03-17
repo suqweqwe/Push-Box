@@ -71,41 +71,59 @@
             </TextBlock>
 
             <!-- 地图按钮容器 -->
-            <StackPanel Grid.Row="2" Grid.Column="1" 
-                        x:Name="MapButtonsPanel" 
-                        Orientation="Vertical" 
-                        HorizontalAlignment="Center"
-                        Margin="20">
-                <!-- 按钮将动态生成 -->
-            </StackPanel>
+            <ScrollViewer Grid.Row="2" Grid.Column="1" 
+                         VerticalScrollBarVisibility="Auto"
+                         HorizontalScrollBarVisibility="Disabled"
+                         Margin="20">
+                <StackPanel x:Name="MapButtonsPanel" 
+                           Orientation="Vertical" 
+                           HorizontalAlignment="Center">
+                    <!-- 按钮将动态生成 -->
+                </StackPanel>
+            </ScrollViewer>
 
             <!-- 返回按钮 -->
             <Border Grid.Row="3" Grid.Column="1" 
                     Margin="10,40,10,60"  
-                CornerRadius="10"
-                    Background="#1e293b"
-             
-                BorderBrush="#38bdf8"
-           
-                BorderThickness="2"
-                    Width="180">
+                    CornerRadius="15"
+                    Width="200"
+                    Height="70">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#2a1e3a" Offset="0"/>
+                        <GradientStop Color="#3a2a4a" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.BorderBrush>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#9D4EDD" Offset="0"/>
+                        <GradientStop Color="#7B2CBF" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border.BorderThickness>
+                    <Thickness>2</Thickness>
+                </Border.BorderThickness>
+                <Border.Effect>
+                    <DropShadowEffect Color="#9D4EDD" BlurRadius="15" Opacity="0.5" ShadowDepth="0"/>
+                </Border.Effect>
                 <Button Content="返回" 
-                        FontSize="24" 
-                        Height="65"
+                        FontSize="26" 
+                        FontWeight="Bold"
+                        Height="70"
                         Click="Back_Click"
-                        Foreground="#e2e8f0" 
-                    Background="Transparent"
+                        Foreground="#FFFFFF" 
+                        Background="Transparent"
                         BorderBrush="Transparent"
-                        BorderThickness="0">
+                        BorderThickness="0"
+                        Cursor="Hand">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Foreground" Value="#38bdf8"/>
-                                    <!-- 悬停变亮蓝色 -->
+                                    <Setter Property="Foreground" Value="#9D4EDD"/>
                                     <Setter Property="RenderTransform">
                                         <Setter.Value>
-                                            <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                            <ScaleTransform ScaleX="1.08" ScaleY="1.08"/>
                                         </Setter.Value>
                                     </Setter>
                                 </Trigger>
